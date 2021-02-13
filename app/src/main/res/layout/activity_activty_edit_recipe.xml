@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAltBackGround"
+    tools:context=".Recipes_Package.Activity_EditRecipe">
+
+    <LinearLayout
+        android:id="@+id/buttonTabRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTitleLabel"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#B01B1919"
+            android:text="Ingredients"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_above="@+id/buttonTableRow"
+        android:layout_below="@+id/buttonTabRow"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/buttonTableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Done"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <Button
+            android:id="@+id/buttonAddFood"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Food"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

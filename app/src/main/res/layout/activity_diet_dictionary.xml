@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAltBackGround"
+    tools:context=".DietDictionary_Package.Activity_DietDictionary">
+
+    <LinearLayout
+        android:id="@+id/buttonTabRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTitleLabel"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerFoodType"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Food Type"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#B01B1919"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDietType"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp"
+            android:layout_weight=".25"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewDictionaryFoods"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_above="@+id/buttonTableRow"
+        android:layout_below="@+id/buttonTabRow"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/buttonTableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Done"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <Button
+            android:id="@+id/buttonAddRecipe"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Food"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

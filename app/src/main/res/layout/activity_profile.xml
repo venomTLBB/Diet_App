@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackGround"
+    tools:context=".Profile_Package.Activity_Profile">
+
+    <TextView
+        android:id="@+id/math_output_dailyCaloricTarget"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/math_output_Maintenance"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/math_label_dailyCaloricTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/math_output_Maintenance"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Daily Caloric Target"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/fit_spinner_weeklyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinner_weeklyGoal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/fit_label_weekActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinner_weeklyGoal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Weekly Activity"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/pd_spinner_hight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_et_gender"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinner_weeklyGoal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_et_targetWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/fit_label_weeklyGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_et_targetWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Weekly Goal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_fitness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="262dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="Fitness and Diet"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_outputMath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_spinner_diet"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="Math"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pd_label_hight"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_label_gender"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Hight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/fit_et_startWeight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_fitness"
+        android:layout_marginTop="1dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:text="175"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/fitness_et_currWeight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/fit_label_currentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Current Weight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fit_label_startWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_fitness"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Starting Weight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/fit_et_targetWeight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fitness_et_currWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:text="150"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="textEnd"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/fit_label_targetWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fitness_et_currWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Target Weight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pd_label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_et_age"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/pd_et_gender"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_et_age"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:text="Male"
+        android:inputType="text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pd_et_age"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_et_name"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="textEnd"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/pd_label_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pd_et_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_PersonalDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="66dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="Personal Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/fit_spinner_diet"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/fit_label_diet"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Selected Diet"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/math_output_Maintenance"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/math_label_dailyMaintinance"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Daily Maintinance"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <EditText
+        android:id="@+id/pd_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_PersonalDetails"
+        android:layout_marginTop="1dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:text="Fox"
+        android:textAlignment="textEnd"
+        android:inputType="text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:textColor="#FFFFFF"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/pd_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_PersonalDetails"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>

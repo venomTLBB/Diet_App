@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackGround"
+    tools:context=".DailyTracker_Package.Activity_DailyTrackerMainMenu">
+
+    <Button
+        android:id="@+id/button_AddFoodEvening"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/DinnerScroll"
+        android:layout_marginTop="-1dp"
+        android:text="Add Food"
+        android:textSize="7sp"></Button>
+
+    <Button
+        android:id="@+id/button_AddFoodMidDay"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/LunchScroll"
+        android:layout_marginTop="-1dp"
+        android:text="Add Food"
+        android:textSize="7sp"></Button>
+
+    <LinearLayout
+        android:id="@+id/ButtonTabRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ButtonFood"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/ButtonDetails"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/BreakfastScroll"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_below="@+id/DateRow"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorTitleLabel">
+
+        <LinearLayout
+            android:id="@+id/BreakfastLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/BreakfastTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Morning Foods"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Calories"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Carbs"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Fat"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Protein"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Sugar"
+                        android:padding="3dip" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_AddFoodMorning"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/BreakfastScroll"
+        android:text="Add Food"
+        android:layout_marginTop="-1dp"
+        android:textSize="7sp"></Button>
+
+    <TextView
+        android:id="@+id/label_morningCaloricTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BreakfastScroll"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="label_morningCaloricTotal"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/LunchScroll"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_below="@+id/BreakfastScroll"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorTitleLabel">
+
+        <LinearLayout
+            android:id="@+id/LunchLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/LunchTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow>
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Midday Foods"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Calories"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Carbs"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Fat"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Protein"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Sugar"
+                        android:padding="3dip" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/label_midDayCaloricTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LunchScroll"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="label_midDayCaloricTotal"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/DinnerScroll"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_below="@+id/LunchScroll"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorTitleLabel">
+
+        <LinearLayout
+            android:id="@+id/DinnerLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/DinnerTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow>
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".5"
+                        android:text="Evening Foods"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".1"
+                        android:text="Calories"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".1"
+                        android:text="Carbs"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".1"
+                        android:text="Fat"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".1"
+                        android:text="Protein"
+                        android:padding="3dip" />
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight=".1"
+                        android:text="Sugar"
+                        android:padding="3dip" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/label_eveningCaloricTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DinnerScroll"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorTitleLabel"
+        android:paddingLeft="10dp"
+        android:text="label_eveningCaloricTotal"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/CaloricTracker"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/DinnerScroll"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorTitleLabel"
+        android:text="TEST"></TextView>
+
+    <LinearLayout
+        android:id="@+id/DateRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonTabRow"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/buttonPrevDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".05"
+            android:text="Prev" />
+
+        <Button
+            android:id="@+id/buttonCurrentDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".90" />
+
+        <Button
+            android:id="@+id/buttonNextDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".05"
+            android:text="Next" />
+    </LinearLayout>
+</RelativeLayout>

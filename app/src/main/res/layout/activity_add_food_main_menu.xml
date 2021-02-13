@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackGround"
+    tools:context=".DailyTracker_Package.Activity_AddFoodMainMenu">
+
+    <Button
+        android:id="@+id/buttonRecipes"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonOils"
+        android:layout_marginTop="5dp"
+        android:text="@string/mm_b_recipes" />
+
+    <Button
+        android:id="@+id/buttonOils"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonGrains"
+        android:layout_marginTop="5dp"
+        android:text="Oils"/>
+
+    <Button
+        android:id="@+id/buttonGrains"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonVegetables"
+        android:layout_marginTop="5dp"
+        android:text="Grains, Beans and Nuts"/>
+
+    <Button
+        android:id="@+id/buttonVegetables"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonFruits"
+        android:layout_marginTop="5dp"
+        android:text="Vegetables"/>
+
+    <Button
+        android:id="@+id/buttonFruits"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonDairy"
+        android:layout_marginTop="5dp"
+        android:text="FRUITS"/>
+
+    <Button
+        android:id="@+id/buttonFish"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonMeats"
+        android:layout_marginTop="5dp"
+        android:text="FISH"/>
+
+    <Button
+        android:id="@+id/buttonMeats"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="67dp"
+        android:text="MEATS"/>
+
+    <Button
+        android:id="@+id/buttonDairy"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonFish"
+        android:layout_marginTop="5dp"
+        android:text="DAIRY"/>
+
+    <TextView
+        android:id="@+id/textView_Output_TotalCalories"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+</RelativeLayout>

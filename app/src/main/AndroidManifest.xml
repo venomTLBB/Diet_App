@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.restrictive_diet">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Recipes_Package.Activity_EditRecipe"></activity>
+        <activity android:name=".DietDictionary_Package.Activity_EditFoodDefinition" />
+        <activity android:name=".DietDictionary_Package.Activity_AddFoodToDictionary" />
+        <activity android:name=".Restaurants_Package.Activity_Restaurants" />
+        <activity android:name=".Recipes_Package.Activity_Recipes" />
+        <activity android:name=".DietDictionary_Package.Activity_DietDictionary" />
+        <activity android:name=".DailyTracker_Package.Activity_AddFoodSingleFood" />
+        <activity android:name=".DailyTracker_Package.Activity_AddFoodSubMenu" />
+        <activity android:name=".DailyTracker_Package.Activity_AddFoodMainMenu" />
+        <activity android:name=".DailyTracker_Package.Activity_DailyTrackerMainMenu" />
+        <activity
+            android:name=".Profile_Package.Activity_Profile"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

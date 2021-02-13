@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="servingType_array">
+        <item>Ounces</item>
+        <item>Grams</item>
+        <item>TBSP</item>
+        <item>Cup</item>
+    </string-array>
+</resources>

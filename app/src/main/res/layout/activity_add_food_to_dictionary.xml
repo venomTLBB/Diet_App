@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackGround"
+    tools:context=".DietDictionary_Package.Activity_AddFoodToDictionary">
+
+
+    <EditText
+        android:id="@+id/editText_Sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Sodium"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_Sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Sugar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Sodium" />
+
+    <EditText
+        android:id="@+id/editText_Sodium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Protein"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_Sodium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Sodium"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Protein" />
+
+    <EditText
+        android:id="@+id/editText_Protein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Fats"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_Protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Protein"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Fats" />
+
+    <EditText
+        android:id="@+id/editText_Fats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Carbs"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_Fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Fats"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Carbs" />
+
+    <EditText
+        android:id="@+id/editText_Carbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CaloriesPer100g"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_Carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Carbs"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CaloriesPer100g" />
+
+    <EditText
+        android:id="@+id/editText_CaloriesPer100g"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_marginTop="36dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="162"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietType"
+        tools:layout_editor_absoluteX="0dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_CaloriesPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_et_startWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Cals Per 100g:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietType" />
+
+    <Spinner
+        android:id="@+id/spinnerDietType"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFoodType" />
+
+    <TextView
+        android:id="@+id/textView_Label_DietType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Diet Type:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFoodType" />
+
+    <Spinner
+        android:id="@+id/spinnerFoodType"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:background="#1BFFFFFF"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFoodName" />
+
+    <TextView
+        android:id="@+id/textView_Label_FoodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Food Type:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFoodName" />
+
+    <EditText
+        android:id="@+id/editTextFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_PersonalDetails"
+        android:layout_marginTop="68dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:text="Fox"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_FoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_PersonalDetails"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="64dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Food Name:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonTableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Done"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <Button
+            android:id="@+id/buttonAddRecipe"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Food"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

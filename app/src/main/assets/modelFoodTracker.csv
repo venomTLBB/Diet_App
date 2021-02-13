@@ -1,0 +1,15 @@
+﻿TimeOfDay,Date,GrandTotalCalories,TotalCalories,TotalCarbs,TotalFat,TotalProtein,TotalSodium,TotalSugar,FoodAmount,ServingType,FoodItem
+Morning,2019-12-04,347,64,2562,3346,245,4626,62,6,Ounces,banana
+Morning,2019-12-04,272,63,532,252,25,425,626,2,Grams,peanut butter
+Morning,2019-12-04,542,263,6,5,245,52,754,5,Tablespoons,white bread
+Midday,2019-12-04,57,62462,42,43,24,252,263,3,Cups,onion
+Evening,2019-12-04,4527,46,626,34634,5,45,254725,5,Cups,pork
+Evening,2019-12-04,2457,26,463,245642,245,245,2457,2,Ounces,vegetable oil
+Morning,2019-12-03,43456,326,36,2452,262,235,262,4,Teaspoons,chicken
+Morning,2019-12-03,54734,65,4536,5245,424,2342,5462,5,Cups,duck
+Midday,2019-12-03,256,4,3,245,65,432,62,3,Ounces,potato
+Evening,2019-12-03,457,34,636,345,36345,526,6,5,Grams,sugar
+Morning,2019-12-02,2,64,3563,23,43643,53645,2346,1,Tablespoons,pork
+Midday,2019-12-02,4562,63,634,52,256,3463,2346,4,Teaspoons,lobster
+Midday,2019-12-02,45,45,63,4,345,53,7643,5,Ounces,chicken
+Evening,2019-12-02,24,346,353,245,34,43,34783,1,Tablespoons,lo mein

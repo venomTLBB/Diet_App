@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackGround"
+    tools:context=".DailyTracker_Package.Activity_AddFoodSingleFood">
+
+    <TextView
+        android:id="@+id/textView_Output_TotalCalories"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextServingAmount" />
+
+    <TextView
+        android:id="@+id/textView_Label_TotalCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Total Calories: "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Label_ServingAmount" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesPerServing"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:background="#1BFFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodName" />
+
+    <TextView
+        android:id="@+id/textView_Label_CaloriesPerServing"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_outputMath"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Calories Per Serving"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodName" />
+
+    <EditText
+        android:id="@+id/editTextServingAmount"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fitness_et_currWeight"
+        android:layout_marginTop="3dp"
+        android:background="#1BFFFFFF"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerServingType">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Label_ServingAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fitness_et_currWeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Serving Amount"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerServingType" />
+
+    <Spinner
+        android:id="@+id/spinnerServingType"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:background="#1BFFFFFF"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaloriesPerServing" />
+
+    <TextView
+        android:id="@+id/textView_Label_ServingType"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fit_spinner_weeklyActivity"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Serving Type"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerServingType" />
+
+    <TextView
+        android:id="@+id/textViewFoodName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorTitleLabel"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="208dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

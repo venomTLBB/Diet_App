@@ -1,0 +1,20 @@
+Name,Calories,Carbs,Fat,Protein,Sodium,Sugar,isDefault,isHidden,FoodType,OffLimitsTo
+Butter,7.429,0,0.786,0,0.003,0,1,0,DAIRY,3
+Apple,0.5,0.107,0,0,0,0.071,1,0,FRUIT,2
+Banana,0.893,0.214,0,0,0,0.107,1,0,FRUIT,2
+Pineapple,0.5,0.107,0,0,0,0.071,1,0,FRUIT,
+Peanut Butter,5.679,0.143,0.5,0.25,0,0,1,0,GRAIN,
+Mexican Rice,0.857,0.107,0.036,0,0.06,0,1,0,GRAIN,
+Spaghetti,0.44,0.08,0,0.01,0.001,0,1,0,GRAIN,
+Steak,3.393,0,0.214,0.321,0.002,0,1,0,MEAT,2-3
+Pork,2.214,0,0.143,0.143,2.036,0,1,0,MEAT,2-3
+Duck,1.393,0,0,0.25,0,0,1,0,MEAT,2-3
+Lobster,1.107,0,0,0.179,0.002,0,1,0,MEAT,2-3
+Chicken,1.464,0,0,0.286,0.002,0,1,0,MEAT,2-3
+Vegetable Oil,30,0,3,0,0,0,1,0,OIL,
+Onion,13,3,0,0,0.01,1,1,0,VEGETABLE,2
+Carrot,0.393,0.071,0,0,0.001,0.036,1,0,VEGETABLE,
+Potato,16,3,0,0,0.02,0,1,0,VEGETABLE,
+Eggplant,0.25,0.05,0,0,0.02,0.03,1,0,VEGETABLE,
+Green Leaf Lettuce,0.15,0.02,0,0.01,0.028,0,1,0,VEGETABLE,
+Garlic,1.5,0.36,0,0.036,0.004,0,1,0,VEGETABLE,2

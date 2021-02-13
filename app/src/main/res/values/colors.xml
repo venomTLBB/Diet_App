@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBaseBackGround">#F21B1919</color>
+    <color name="colorAltBackGround">#9F1B1919</color>
+    <color name="colorTitleLabel">#5C949191</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorEditText">#1BFFFFFF</color>
+    <color name="colorAddFoodButton">#45FFFFFF</color>
+</resources>
